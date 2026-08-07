@@ -38,7 +38,7 @@ reliability models and queueing systems.
 | 7 | `07_Markov_Chain_Part3.ipynb` | Reliability, buffers and the M/M/1 queue |
 | 8 | `08_Exploratory_Module_1.ipynb` | Non-homogeneous Poisson processes |
 | 9 | `09_Exploratory_Module_2.ipynb` | Growing self-avoiding walks |
-| 10 | `010_Exploratory_Module_3..ipynb` | Coalescing particles on a circle |
+| 10 | `10_Exploratory_Module_3.ipynb` | Coalescing particles on a circle |
 
 The three exploratory modules vary one modelling assumption at a time:
 time-homogeneous intensity, path independence and the use of a single-particle
@@ -78,10 +78,11 @@ checks and submission checklist.
 
 ## Reproducibility
 
-Figures and numerical summaries cited in the thesis should use fixed random
-seeds. Exploratory classroom cells may deliberately generate different
-realisations, provided that they are clearly labelled. Empirical outputs should
-always be interpreted together with their theoretical reference values.
+The teaching notebooks do not fix a random seed during normal execution, so a
+rerun produces another valid realisation. Reproducibility here means using the
+same model, parameters and procedure and obtaining the same statistical
+behaviour, not identical random values. Empirical outputs should always be
+interpreted together with their theoretical reference values.
 
 ## Scope
 

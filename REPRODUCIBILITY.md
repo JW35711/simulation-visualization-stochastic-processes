@@ -42,7 +42,7 @@ Run each notebook from top to bottom in this order:
 8. `07_Markov_Chain_Part3.ipynb`
 9. `08_Exploratory_Module_1.ipynb`
 10. `09_Exploratory_Module_2.ipynb`
-11. `010_Exploratory_Module_3..ipynb`
+11. `10_Exploratory_Module_3.ipynb`
 
 Use **Kernel → Restart Kernel and Run All Cells** for every notebook. A clean
 run must not depend on variables created by another notebook or by an earlier
@@ -50,13 +50,15 @@ interactive session.
 
 ## 3. Random-seed policy
 
-- Use fixed seeds for figures and numerical summaries cited in the thesis.
-- Set the seed immediately before the corresponding stochastic experiment.
-- Record important parameter values next to the result or in its caption.
-- Classroom exploration cells may use fresh seeds when their purpose is to
-  demonstrate variability.
-- Clearly label exploratory cells so that changing output is not mistaken for
-  a reproducibility failure.
+- Normal notebook execution uses a fresh NumPy random generator without a
+  fixed seed, so rerunning a notebook produces another valid realisation.
+- Record important parameter values and sample sizes next to the result or in
+  its caption.
+- Reproducibility means that the same model, procedure and statistical
+  behaviour can be obtained in a compatible environment; it does not require
+  identical random values.
+- A fixed seed may be supplied temporarily when debugging a specific result,
+  but it is not required for the teaching experiments.
 
 ## 4. Numerical checks
 
@@ -89,10 +91,3 @@ expected and should generally decrease as the sample size grows.
 - [ ] Third-party PDFs under `reference/` are not published.
 - [ ] The final thesis PDF and editable source are packaged separately when
       required by the examiner or university submission system.
-
-## 6. Known naming issue
-
-The original Module 10 notebook is currently named
-`010_Exploratory_Module_3..ipynb`. The name is retained to avoid breaking
-existing thesis references. Rename it to `10_Exploratory_Module_3.ipynb` only
-after checking every link, caption and manuscript reference.
